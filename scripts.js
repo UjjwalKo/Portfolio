@@ -10,3 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 particlesJS.load('particles-js', 'particles.json', function() {
     console.log('particles.js loaded - callback');
 });
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+});
